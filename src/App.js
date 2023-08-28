@@ -1,5 +1,7 @@
 import './App.css';
 import './components/MainStyle.css'
+import './components/MainStyle_412px.css'
+import './components/MainStyle_768px.css'
 import Dices from './components/Dices'
 
 
