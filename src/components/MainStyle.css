@@ -203,7 +203,7 @@ font-size: 300%;
 
 .close_btn{
     position: fixed;
-    left: 1017px;
+    left: 1014px;
     top: 50px;
     border-radius: 10px;
     background-color:  rgb(124, 97, 243);
@@ -261,6 +261,13 @@ font-size: 300%;
     left: 415px;
     background-color:  rgb(124, 97, 243);
     text-align: center;
+}
+
+.signature{
+    position: relative;
+    top: 55px;
+    left: -400px;
+    color: rgb(4, 4, 59);
 }
 
 

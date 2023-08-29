@@ -1,6 +1,6 @@
 
 
-@media (max-width: 768px) { /* iPad Mini */
+@media (max-width: 768px) and (min-width: 480px) { /* iPad Mini */
 /* *{
     justify-content: center
 } */
@@ -13,7 +13,7 @@
         position: relative;
         margin: 5px;
         display: flex;
-        top: 0px;
+        top: 40px;
         left: 240px;
 
     }
@@ -43,7 +43,7 @@
         flex-direction: column;
         position: absolute;
         width: 75px;
-        top: 80px;
+        top: 120px;
         justify-content: center;
     }
 
@@ -73,7 +73,7 @@
 .dicesThrow{
     display: flex;
     position: absolute;
-    top: 700px;
+    top: 740px;
     left: 110px;
    
 }
@@ -81,14 +81,14 @@
 .dicesKeep{
     display: flex;
     position: absolute;
-    top: 760px;
+    top: 800px;
     left: 110px;
 }
 
 .countThrow{
     display: flex;
     position: absolute;
-    top: 635px;
+    top: 675px;
     left: 130px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: xx-large;
@@ -230,7 +230,7 @@
 .rules_btn{
 
     position: fixed;
-    top: 45px;
+    top: 85px;
     left: 385px;
     background-color:  rgb(124, 97, 243);
     border: 2px solid;
@@ -250,9 +250,9 @@
     position: fixed;
     border-radius: 10px;
     width: 580px;
-    height: 650px;;
-    top: 50px;
-    left: 15px;
+    height: 700px;;
+    top: 75px;
+    left: 85px;
     background-color:  rgb(124, 97, 243);
     text-align: center;
 
@@ -265,8 +265,8 @@
 
 .close_btn{
     position: fixed;
-    left: 548px;
-    top: 50px;
+    left: 618px;
+    top: 75px;
     border-radius: 10px;
     background-color:  rgb(124, 97, 243);
     border: 2px solid;
@@ -301,6 +301,11 @@
 
 }
 
-
+.signature{
+    position: relative;
+    top: 15px;
+    left: -65px;
+    color: rgb(4, 4, 59);
+}
 
   }

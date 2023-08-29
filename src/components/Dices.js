@@ -291,7 +291,10 @@ const keepDice2 = () => {
       )}
      
       <div className={dicealertMessageOn || engGameMessage ? 'App grid-container freezeBackground' : (showRules ? 'App grid-container bluredBackground' : 'App grid-container')}>
-      <div className='title'>Yamb Game</div>
+
+
+     <div className='title'>Yamb Game</div>
+     <p className='signature'><i>by Maxa</i></p>
 
 
      <Calculations allKept={allKept} resetDices={resetDices} initialCounterValue={initialCounterValue} setnumberFieldsLeftDownFreeUp={setnumberFieldsLeftDownFreeUp} setnumberFieldsLeftCallHand={setnumberFieldsLeftCallHand} numberFieldsLeftDownFreeUp={numberFieldsLeftDownFreeUp} numberFieldsLeftCallHand={numberFieldsLeftCallHand} diceAlert={diceAlert} makeThworActive={makeThworActive} setgetFinalResult={setgetFinalResult}/>
