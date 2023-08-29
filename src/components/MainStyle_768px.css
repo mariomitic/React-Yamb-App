@@ -230,8 +230,8 @@
 .rules_btn{
 
     position: fixed;
-    top: 85px;
-    left: 385px;
+    top: 75px;
+    left: 420px;
     background-color:  rgb(124, 97, 243);
     border: 2px solid;
     border-color: aliceblue;
@@ -302,9 +302,9 @@
 }
 
 .signature{
-    position: relative;
-    top: 15px;
-    left: -65px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
     color: rgb(4, 4, 59);
 }
 
