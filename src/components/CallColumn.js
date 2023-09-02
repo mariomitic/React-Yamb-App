@@ -1,5 +1,5 @@
 import React from 'react'
-import './MainStyle.css'
+//import './MainStyle.css'
 
 function CallColumn(props) {
 

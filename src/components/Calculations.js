@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './MainStyle.css'
+//import './MainStyle.css'
 
 import MemoTable from './MemoTable'
 import DownColumn from './DownColumn'
@@ -939,31 +939,33 @@ document.addEventListener('contextmenu',(e) =>
     let enterFull = 0;
      let three = [];
      let pair = [];
+
     if(allKept[4] === ''){
-      allKept.splice(4,2)
-      enterFull = 0
-    } else {
-      for(let i=0; i<allKept.length; i++){
-      if(allKept[i] === allKept[i+1] && allKept[i] === allKept[i+2]){
-        three.push(allKept[i], allKept[i+1], allKept[i+2])
-        allKept.splice([i], 3)
-      }
+      enterFull = 0;
+      
+      } else {
+        for(let i=0; i<allKept.length; i++){
+  
+        if(allKept[i] === allKept[i+1] && allKept[i] === allKept[i+2]){
+          three.push(allKept[i], allKept[i+1], allKept[i+2])
+          allKept.splice([i], 3) // takes 3 same (of greater value) from array
         }
-
-      for(let i=0; i<allKept.length; i++){
-      if(allKept[i] === allKept[i+1]){
-        pair.push(allKept[i], allKept[i+1])
-        allKept.splice([i], 2)
       }
-        }
-        if(three[0] === pair[0]){
-          enterFull = 0;
           
-        }else{
-        enterFull = 30 + three[0] + three[1] + three[2] + pair[0] + pair[1];
+        for(let i=0; i<allKept.length; i++){
+        if(allKept[i] === allKept[i+1]){
+          pair.push(allKept[i], allKept[i+1]) // takes pair from the rest of array
+          allKept.splice([i], 2)
         }
-      }
-
+          }
+        }
+          if(three.length === 0 || pair.length === 0 || three[0] === pair[0]){
+            enterFull = 0;
+            
+          }else{
+          enterFull = 30 + three[0] + three[1] + three[2] + pair[0] + pair[1];
+          }
+  
       if(elementColumn === 'down'){
       if(props.initialCounterValue === 0){return}
       setDownFull(enterFull)

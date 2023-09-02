@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './MainStyle.css'
+//import './MainStyle.css'
 import Calculations from './Calculations'
 
 

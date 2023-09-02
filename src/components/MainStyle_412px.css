@@ -1,122 +1,135 @@
 
 
-@media (max-width: 412px) { /* Samsung Galaxy A51/71 */
+@media (max-width: 412px) { 
+    /* Samsung Galaxy A51/71 */
+    /* *{
+        scale: 0.98;
+    } */
 
-    
     .title {
         color: rgb(13, 13, 110);
         font-family: Calibri;
-        font-size: 200%;
-        position: relative;
-        margin: 5px;
+        font-size: 300%;
         display: flex;
-        top: 20px;
-        left: 100px;
-
-    }
-    .sub {
-        color: rgb(84, 84, 173);
-        font-family: Calibri;
-        font-size: 100%;
         position: relative;
+        left:55px;
+        top: -30px;
         margin: 10px;
-        display: flex;
-        top: -20px;
-        left: 175px;
-
+    
     }
-
-    .cellBorder {
-        border: 2px solid black;
-        margin: 2px;
-        height: 25px;
-        font-size: 100%;
-        border-radius: 5px;
-        }
-
+    /* .title{
+        display: flex;
+        position: absolute;  
+        top: 15px;
+        left: 175px;
+    } */
+    
     .memoTable, .downColumn, .freeColumn, .upColumn, .callColumn, .handColumn, .sumColumn{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display:flex;
+        display: flex;
         flex-direction: column;
         position: absolute;
         width: 55px;
-        top: 80px;
+        top: 75px;
+        font-size: 85%;
+        text-align: center;
+        
+        
+        
     }
-
+    
     .memoTable{
-        left: 10px;
+        left: 5px;
     }
     .downColumn{
-        left: 65px;
+        left: 60px;
     }
     .freeColumn{
-        left:120px
+        left:115px
     }
     .upColumn{
-        left: 175px;
+        left: 170px;
     }
     .callColumn{
-        left: 230px;
+        left: 225px;
     }
     .handColumn{
-        left: 285px;
+        left: 280px;
     }
     .sumColumn{
-        left: 340px;
+        left: 335px;
     }
-
-
-.dicesThrow{
-    display: flex;
-    position: absolute;
-    top: 700px;
-    left: 10px;
-}
-
-.dicesKeep{
-    display: flex;
-    position: absolute;
-    top: 760px;
-    left: 10px;
-}
-
-.countThrow{
-    display: flex;
-    position: absolute;
-    top: 635px;
-    left: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-}
-.sumSpacing {
+    
+    .dicesThrow{
+        display: flex;
+        position: absolute;  
+        top: 300px;
+        left: 650px;
+    }
+    
+    .dicesKeep{
+        display: flex;
+        position: absolute;  
+        top: 360px;
+        left: 650px;
+    }
+    
+    .countThrow{
+        display: flex;
+        position: absolute;  
+        top: 700px;
+        left: 35px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+    }
+    
+    
+    .cellBorder {
+    border: 2px solid black;
+    margin: 1px;
+    padding-top: 2px;;
+    height: 30px;
+    font-size: 130%;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+    }
+    
+    .sumSpacing {
     visibility: hidden;
     }
-
-
-    /* .clickable:hover {
+    
+    
+    .clickable:hover {
         background-color: yellow;
         transform: scale(1.15);
-
-      } */
-
+    
+      }
+    
     .sumBackground{
         background-color: rgb(49, 168, 156)
     }
-
+    
+    
+    
+    
     .throwBox, .thrownDice1, .thrownDice2, .thrownDice3, .thrownDice4, .thrownDice5, .thrownDice6,
     .keepBox, .keptDice1, .keptDice2, .keptDice3, .keptDice4, .keptDice5, .keptDice6{
     color:rgb(4, 4, 35);
     background-color: rgb(124, 97, 243);
-    width: 50px;
-    font-size: 100%;
+    width: 55px;
+    font-size: 115%;
     border: 1px solid rgb(2, 27, 2);
-    margin: 2px;
-    height: 50px;
+    margin: 1px;
+    height: 55px;
     border-radius: 5px;
     border-color: aliceblue;
     text-align: center;
+    position: relative;
+    top: 465px;
+    left: -640px;
+    
     }
-/*
     .throwBox:hover { background-color: yellow }
     .thrownDice1:hover { background-color: yellow }
     .thrownDice2:hover { background-color: yellow }
@@ -129,39 +142,103 @@
     .keptDice3:hover { background-color: yellow }
     .keptDice4:hover { background-color: yellow }
     .keptDice5:hover { background-color: yellow }
-    .keptDice6:hover { background-color: yellow } */
-
-
+    .keptDice6:hover { background-color: yellow }
+    
     .thrownDice1, .thrownDice2, .thrownDice3, .thrownDice4, .thrownDice5, .thrownDice6,
     .keptDice1, .keptDice2, .keptDice3, .keptDice4, .keptDice5, .keptDice6{
-
-    font-size: 225%;
+    width: 50px;
+    font-size: 250%;
     }
-
+    
     .muteDice{
         pointer-events: none;
     }
-
+    
     .muted{
         pointer-events: none;
     }
-
-
+    
+    .temporarilyMuted{
+        pointer-events: none;
+    }
+    
+    
+    
     .throwCounter {
         width: 55px;
         font-size: 300%;
         text-align: right;
         }
-
+    
     .hideElement {
         visibility: hidden;
     }
-
+    
     .turnRed{
         color: red;
     }
-
-
+    
+    .calledCell {
+        background-color: yellow;
+        transform: scale(1.15);
+    }
+    
+    .bluredBackground {
+        filter: blur(5px);
+        pointer-events: none;
+    }
+    
+    .rules_btn{
+    
+        position: relative;
+        top: 50px;
+        left: 320px;
+        background-color:  rgb(124, 97, 243);
+        border: 2px solid;
+        border-color: aliceblue;
+        border-radius: 5px;
+    }
+    
+    .rules_btn:hover{
+        background-color: yellow;
+    }
+    
+    .popuptext{
+        z-index: 2;
+        border: 2px solid;
+        border-color: aliceblue;
+        opacity: 1;
+        position: fixed;
+        border-radius: 10px;
+        width: 390px;
+        height: 820px;;
+        top: 20px;
+        left: 10px;
+        background-color:  rgb(124, 97, 243);
+        text-align: center;
+        
+    }
+    
+    .rulesTitle {
+        color: greenyellow;
+    }
+    
+    
+    .close_btn{
+        position: fixed;
+        left: 352px;
+        top: 20px;
+        border-radius: 10px;
+        background-color:  rgb(124, 97, 243);
+        border: 2px solid;
+        border-color: aliceblue;
+    }
+    
+    .close_btn:hover{
+        background-color: rgb(156, 58, 58);
+    }
+    
+    
     .diceAlert{
         z-index: 2;
         border: 2px solid;
@@ -171,13 +248,13 @@
         border-radius: 10px;
         width: 350px;
         height: 150px;;
-        top: 300px;
-        left: 25px;
+        top: 480px;
+        left: 315px;
         background-color:  rgb(243, 97, 116);
         text-align: center;
     }
-
-
+    
+    
     .ok_btn{
         border: 2px solid;
         border-color: aliceblue;
@@ -185,122 +262,36 @@
         background-color:  rgb(124, 97, 243);
         border-radius: 10px;
     }
-
-
-    /* .ok_btn:hover{
+    
+    .ok_btn:hover{
         background-color: yellow;
     }
-     */
+    
     .freezeBackground {
          pointer-events: none;
     }
-
-
-
-    .temporarilyMute {
-        pointer-events: none;
+    
+    .endGame{
+        z-index: 2;
+        border: 2px solid;
+        border-color: aliceblue;
+        opacity: 1;
+        position: fixed;
+        border-radius: 5px;
+        width: 350px;
+        height: 185px;;
+        top: 300px;
+        left: 415px;
+        background-color:  rgb(124, 97, 243);
+        text-align: center;
     }
-
-    .calledCell {
-        background-color: yellow;
-        transform: scale(1.15);
-
-  }
-
-    /* rules */
-  .turnRed{
-    color: red;
-}
-
-.calledCell {
-    background-color: yellow;
-    transform: scale(1.15);
-} 
-
-.bluredBackground {
-    filter: blur(5px);
-    pointer-events: none;
-}
-
-.rules_btn{
-
-    position: fixed;
-    top: 55px;
-    left: 260px;
-    background-color:  rgb(124, 97, 243);
-    border: 2px solid;
-    border-color: aliceblue;
-    border-radius: 5px;
-}
-
-/* .rules_btn:hover{
-    background-color: yellow;
-} */
-
-.popuptext{
-    z-index: 2;
-    border: 2px solid;
-    border-color: aliceblue;
-    opacity: 1;
-    position: fixed;
-    border-radius: 10px;
-    width: 380px;
-    height: 850px;;
-    top: 50px;
-    left: 15px;
-    background-color:  rgb(124, 97, 243);
-    text-align: center;
-
-}
-
-.rulesTitle {
-    color: greenyellow;
-}
-
-
-.close_btn{
-    position: fixed;
-    left: 348px;
-    top: 50px;
-    border-radius: 10px;
-    background-color:  rgb(124, 97, 243);
-    border: 2px solid;
-    border-color: aliceblue;
-}
-
-/* .close_btn:hover{
-    background-color: rgb(156, 58, 58);
-} */
-
-.bluredBackground {
-    filter: blur(5px);
-    pointer-events: none;
-}
-
-  /* rules */
-
-
-  .endGame{
-    z-index: 2;
-    border: 2px solid;
-    border-color: aliceblue;
-    opacity: 1;
-    position: fixed;
-    border-radius: 5px;
-    width: 350px;
-    height: 185px;;
-    top: 300px;
-    left: 25px;
-    background-color:  rgb(124, 97, 243);
-    text-align: center;
-
-}
-
-.signature{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    color: rgb(4, 4, 59);
-}
+    
+    .signature{
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        color: rgb(4, 4, 59);
+    }
+    
 
   }
