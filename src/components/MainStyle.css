@@ -1,4 +1,4 @@
-@media (min-width: 769px) { 
+@media (min-width: 1101px) { 
 
 .title {
     color: rgb(13, 13, 110);
@@ -190,7 +190,7 @@ font-size: 300%;
     position: fixed;
     border-radius: 10px;
     width: 650px;
-    height: 650px;;
+    height: 675px;;
     top: 50px;
     left: 215px;
     background-color:  rgb(124, 97, 243);

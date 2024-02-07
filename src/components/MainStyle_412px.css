@@ -2,9 +2,9 @@
 
 @media (max-width: 412px) { 
     /* Samsung Galaxy A51/71 */
-    /* *{
+    *{
         scale: 0.98;
-    } */
+    }
 
     .title {
         color: rgb(13, 13, 110);
@@ -17,12 +17,7 @@
         margin: 10px;
     
     }
-    /* .title{
-        display: flex;
-        position: absolute;  
-        top: 15px;
-        left: 175px;
-    } */
+
     
     .memoTable, .downColumn, .freeColumn, .upColumn, .callColumn, .handColumn, .sumColumn{
         display: flex;
